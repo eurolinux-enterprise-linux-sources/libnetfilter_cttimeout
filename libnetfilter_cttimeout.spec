@@ -1,6 +1,6 @@
 Name:           libnetfilter_cttimeout
 Version:        1.0.0
-Release:        6%{?dist}
+Release:        6%{?dist}.1
 Summary:        Timeout policy tuning for Netfilter/conntrack
 Group:          System Environment/Libraries
 License:        GPLv2+
@@ -59,5 +59,8 @@ find $RPM_BUILD_ROOT -type f -name "*.la" -exec rm -f {} ';'
 %{_includedir}/libnetfilter_cttimeout/*.h
 
 %changelog
+* Fri Sep 06 2019 Phil Sutter <psutter@redhat.com> - 1.0.0-6.1
+- Rebuild for inclusion into s390x.
+
 * Fri Jun 19 2015 Paul Wouters <pwouters@redhat.com> - 1.0.0-6
 - Resolves: rhbz#1233221 Add libnetfilter_cttimeout package to RHEL-7
